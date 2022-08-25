@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: border-box;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid teal;
+            border-radius: 5px;
+        }
+
+        input[type="text"],input[type="email"]{
+            width: 20%;
+        }
+        .fieldset{
+            width: 50%;
+        }
+        input[type="card"]
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+        <h1>PAYMENT FORM</h1>
+        <hr>
+        <h2>user infromation</h2>
+        <p>name: *
+            <input type="text"  required name="name">
+        </p>
+        <fieldset>
+            
+                <legend> <b>GENDER</b> </legend>
+                male <input type="radio" name="gender" id="male" value="text">
+                female <input type="radio" name="gender" id="female" value="text">
+        </fieldset>
+
+        <p>
+           address:
+           <textarea name="address" placeholder="enter your address" id="address" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            email:
+            <input type="email" id="email" name="email">
+        </p>
+
+        <p>
+            pincode:
+            <input type="number" name="pincode" id="pincode" placeholder="123456">
+        </p>
+
+        <h2>payment information</h2>
+
+        <p>
+            card type:
+            <select name="card_type" id="card_type">
+                <option value="">----->select the card type<------</option>
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+                <option value="rupay">rupay</option>
+            </select>
+        </p>
+        
+        <p>
+            card number:
+            <input type="number" name="card number" id="card number" placeholder="1111-1111-1111">
+        </p>
+
+        <p>
+            expiration date:
+            <input type="date" name="expiration date" id="expiration date" placeholder="dd-mm-yyyy" >
+        </p>
+
+        <p>
+            cvv:
+            <input type="password" name="cvv" id="cvv" placeholder="123">
+        </p>
+
+        <p>
+            
+            <input type="submit" name="pay">
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    </div>
+</body>
+</html>
